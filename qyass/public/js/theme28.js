@@ -675,7 +675,7 @@ $(document).ready(function() {
           // 1. Force modify the parent anchor link if it exists to disable Frappe routing
           var $parentLink = $logo.closest('a');
           if ($parentLink.length > 0) {
-              $parentLink.attr('href', 'https://misa.newerasofts.com/app/qyass-dashboard');
+              $parentLink.attr('href', '/app/qyass-dashboard');
               // Removing standard frappe routing attributes that intercept clicks
               $parentLink.removeAttr('data-route'); 
               $parentLink.removeClass('route-link');
@@ -691,7 +691,7 @@ $(document).ready(function() {
                   e.preventDefault();
                   e.stopPropagation();
                   e.stopImmediatePropagation();
-                  window.location.href = 'https://misa.newerasofts.com/app/qyass-dashboard';
+                  window.location.href = '/app/qyass-dashboard';
               }, true); // The `true` here is the secret sauce.
 
               // If clicking the parent anchor triggers it, apply capture there too
@@ -700,7 +700,7 @@ $(document).ready(function() {
                       e.preventDefault();
                       e.stopPropagation();
                       e.stopImmediatePropagation();
-                      window.location.href = 'https://misa.newerasofts.com/app/qyass-dashboard';
+                      window.location.href = '/app/qyass-dashboard';
                   }, true);
               }
           }
